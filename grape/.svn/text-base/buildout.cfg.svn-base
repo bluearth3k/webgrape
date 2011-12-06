@@ -1,0 +1,31 @@
+[buildout]
+extends = accessions/Test/db.cfg
+          profiles/Test/db.cfg
+
+extensions = mr.developer
+auto-checkout = *
+parts = ${runs:parts}
+
+[sources]
+pipeline = svn svn://guest@svn.crg.es/big/pipeline/trunk path=src egg=false
+overlap = svn svn://guest@svn.crg.es/big/overlap/tags/3.3 path=src egg=false
+flux = svn svn://guest@svn.crg.es/big/flux/tags/beta_20100715 path=src egg=false
+gem = svn svn://guest@svn.crg.es/big/gem/tags/beta_build_544 path=src egg=false
+ 
+[settings]
+java = /soft/bin/java
+perl = /soft/bin/perl
+
+# Further information on the following packages is available here:
+#      http://big.crg.cat/services_and_software
+ 
+# overlap - computes the overlap between two sets of genomic features. 
+overlap = ${buildout:directory}/src/overlap/64bits/overlap
+ 
+# Flux capacitor - predicts abundances for transcript molecules and alternative splicing events from RNAseq experiments.
+flux_jar = ${buildout:directory}/src/flux/lib/FluxCapacitor.jar
+
+# Gem
+gem_folder = ${buildout:directory}/src/gem
+  
+

@@ -1,0 +1,20 @@
+[runs]
+parts = TestRun
+
+[pipeline]
+TEMPLATE   = ${buildout:directory}/src/pipeline/template3.0.txt
+PROJECTID  = Test
+DB         = Test_RNAseqPipeline
+COMMONDB   = Test_RNAseqPipelineCommon
+THREADS    = 8
+MAPPER     = GEM
+MISMATCHES = 2
+CLUSTER    = mem_6
+ANNOTATION = ${buildout:directory}/src/testdata/H.sapiens.EnsEMBL.55.test.gtf
+GENOMESEQ  = ${buildout:directory}/src/testdata/H.sapiens.genome.hg19.test.fa
+
+[TestRun]
+recipe = z3c.recipe.runscript
+update-script = prepare.py:main
+install-script = prepare.py:main
+accession = TestRun

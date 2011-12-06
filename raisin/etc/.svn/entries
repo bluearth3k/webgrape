@@ -1,0 +1,46 @@
+10
+
+dir
+7809
+svn://svn.crg.es/big/raisin/raisin.buildout/trunk/etc
+svn://svn.crg.es/big
+
+
+
+2011-07-15T15:50:07.556370Z
+5583
+mroder
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dea23d7e-8d8f-44dd-93e1-f631b2502708
+
+restish
+dir
+
+connections
+dir
+
+pyramid
+dir
+
+databases
+dir
+
+projects
+dir
+
+misc
+dir
+

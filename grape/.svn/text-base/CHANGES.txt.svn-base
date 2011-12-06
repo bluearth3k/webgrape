@@ -1,0 +1,13 @@
+Next release
+============
+
+Features
+--------
+
+- readType can now be decoded from shorthands 2x50 and 75D
+
+- cellline parameter for pipeline is now quoted
+
+- mate_id now gets a postfix of .1 and .2
+
+- parameters given on multiple lines are collapsed to a single line

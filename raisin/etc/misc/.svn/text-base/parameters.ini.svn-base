@@ -1,0 +1,44 @@
+[partition]
+title = Partition
+type = string
+column = partition
+
+[bio_replicate]
+title = Biological Replicate
+type = string
+column = Bioreplicate
+
+[annotation_version]
+title = Annotation Version
+type = string
+column = annotation_version
+
+[lab]
+title = Lab
+type = string
+column = lab
+
+[cell_type]
+title = Cell Type
+type = string
+column = CellType
+
+[compartment]
+title = Compartment
+type = string
+column = Compartment
+
+[rna_type]
+title = RNA Type
+type = string
+column = RNAType
+
+[read_length]
+title = Read Length
+type = number
+column = read_length
+
+[paired]
+title = Paired
+type = number
+column = paired

@@ -1,0 +1,4 @@
+[app:raisin.restish]
+use = egg:raisin.restish
+cache_dir = %(CACHE_DIR)s
+

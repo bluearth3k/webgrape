@@ -1,0 +1,35 @@
+Next release
+============
+
+Documentation
+-------------
+
+- Add information to the README.txt about MySQL server settings and how to change them
+
+- Document how to override the users.ini and projects.ini in etc/pyramid/development.ini
+
+Bug Fixes
+---------
+
+- By default use users.ini and projects.ini in the pyramid folder in etc/pyramid/development.ini
+
+- Add projects.ini to etc/pyramid with a configuration for the Test project and user raisin
+
+- Add users.ini to etc/pyramid with configuration for user raisin with password raisin
+
+- The etc/restish/development.ini configuration file now uses relative paths, so the paths 
+  don't have to be adapted everytime an installation is being made
+
+- The buildout.cfg now has mr.developer sources that checkout using the rnaguest user.
+
+Internal
+--------
+
+- Install simplejson in the buildout
+
+- Remove the use of fix_http_host
+
+1.1 (2011-06-16)
+================
+
+- Initial release.

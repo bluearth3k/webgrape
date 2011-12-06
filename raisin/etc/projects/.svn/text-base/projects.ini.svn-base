@@ -1,0 +1,6 @@
+[Test]
+projects = Test,
+    [[dbs]]
+    RNAseqPipeline = db
+    RNAseqPipelineCommon = dbcommon
+

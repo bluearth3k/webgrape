@@ -1,0 +1,33 @@
+[TestRun]
+species = Homo sapiens
+readType = 2x76
+cell=NHEK
+rnaExtract=LONGPOLYA
+localization=CELL
+replicate=1
+qualities=solexa
+file_location = ${buildout:directory}/src/testdata/testA.r2.fastq.gz
+                ${buildout:directory}/src/testdata/testA.r1.fastq.gz
+                ${buildout:directory}/src/testdata/testB.r2.fastq.gz
+                ${buildout:directory}/src/testdata/testB.r1.fastq.gz
+sample = Test_TestLocaltrun_read_stats_sample_testA.2
+         Test_TestLocaltrun_read_stats_sample_testA.1
+         Test_TestLocaltrun_read_stats_sample_testB.2
+         Test_TestLocaltrun_read_stats_sample_testB.1
+file_name = testA.r2.fastq
+            testA.r1.fastq
+            testB.r2.fastq
+            testB.r1.fastq
+mate_id = testA.2
+          testA.1
+          testB.2
+          testB.1
+pair_id = testA
+          testA
+          testB
+          testB
+label = Test
+        Test
+        Test
+        Test
+        

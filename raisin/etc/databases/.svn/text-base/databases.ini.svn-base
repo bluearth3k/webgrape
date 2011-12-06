@@ -1,0 +1,10 @@
+[db]
+connection = raisin
+db = RNAseqPipeline
+description = Contains all the statistics results
+
+[dbcommon]
+connection = raisin
+db = RNAseqPipelineCommon
+description = Contains the general information, including experiment and project lists
+
